@@ -66,3 +66,13 @@ joga = () => {
 }
 
 joga()
+// com o map fica ainda mais facil e mais simples
+joga2 = () => {
+  sorte2 = [1, 2, 3, 4, 5, 6]
+  let resultadoMega2 = sorte2.map(function (e) {
+    return (e = Math.floor(Math.random() * (61 - 1) + 1))
+  })
+  console.log('joga na mega 2', resultadoMega2)
+}
+
+joga2()
