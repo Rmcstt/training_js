@@ -31,4 +31,4 @@ validarCPF = cpf => {
   return console.log(`${cpf} valido`)
 }
 
-validarCPF('111.111.111-11')
+validarCPF('168.995.350-09')
