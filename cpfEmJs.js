@@ -1,4 +1,4 @@
-function validarCPF(cpf) {
+validarCPF = cpf => {
   cpf = cpf.replace(/[^\d]+/g, '')
   if (cpf == '') return console.log('voce nao digitou')
   // Elimina CPFs invalidos conhecidos
@@ -15,7 +15,7 @@ function validarCPF(cpf) {
     cpf == '88888888888' ||
     cpf == '99999999999'
   )
-    return false
+    return console.log(`${cpf} invalido`)
   // Valida o primeiro digito
   add = 0
   for (i = 0; i < 9; i++) add += parseInt(cpf.charAt(i)) * (10 - i)
@@ -31,4 +31,4 @@ function validarCPF(cpf) {
   return console.log(`${cpf} valido`)
 }
 
-validarCPF('415.580.638-03')
+validarCPF('111.111.111-11')
